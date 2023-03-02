@@ -103,9 +103,10 @@ button {
   --Primary-Text-Color: hsl(230, 17%, 14%);
   --Secondary-Text-Color: hsl(228, 12%, 44%);
 
-  --Header-Heading-Color: hsl(230, 17%, 14%);
+  --Border-Color: hsl(228, 12%, 44%);
 
   --Theme-Text-Color: hsl(243, 87%, 12%);
+  --Theme-Toggle-Background: hsl(230, 22%, 74%);
   --Theme-Toggle-Color: hsl(0, 0%, 100%);
   --Theme-Toggle-Background-Checked: linear-gradient(
     225deg,
@@ -170,48 +171,46 @@ header {
 
   color: var(--Secondary-Text-Color);
 
-  border-bottom: solid 3px #f7f9ff;
+  border-bottom: solid 1px var(--Border-Color);
 
   padding-bottom: 24px;
-}
-
-.theme-toggle-label {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
-  /* identical to box height */
-
-  color: hsl(228, 12%, 44%);
+  margin-bottom: 16px;
 }
 
 /* ******************** */
 /* THEME TOGGLE */
 /* ******************** */
 
-.theme-selection {
-  font-weight: 400;
-  font-size: var(--Nav-FS);
-  line-height: 14px;
-  font-family: var(--Raleway-FF);
-  color: var(--Theme-Text-Color);
+.theme-toggle-label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  /* line-height: 17px; */
+  /* identical to box height */
+
+  color: hsl(228, 12%, 44%);
+  margin-right: 13px;
 }
 
-.toggle {
+.theme-toggle-container {
+  margin-top: 13px;
+  /* 
+  margin-left: 20px; */
+  /* margin-right: 20px; */
   display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-right: 30px;
+  /* align-items: center; */
+  justify-content: space-between;
+  /* justify-items: flex-end; */
 }
 
 .switch {
   position: relative;
   display: inline-block;
-  width: 40px;
-  height: 20px;
-  background: #f1f3fa;
-  border-radius: 20px;
+  width: 48px;
+  height: 24px;
+  background: var(--Theme-Toggle-Background);
+  border-radius: 12px;
   transition: all 0.3s;
 
   cursor: pointer;
@@ -223,13 +222,13 @@ header {
   height: 18px;
   border-radius: 50%;
   background-color: var(--Theme-Toggle-Color);
-  top: 1px;
-  left: 1px;
+  top: 3px;
+  right: 3px;
   transition: all 0.6s;
 }
 
 .checkbox:checked + .switch::after {
-  left: 20px;
+  right: 25px;
 }
 .checkbox:checked + .switch {
   background: linear-gradient(225deg, #40db82 0%, #388fe7 98.02%);
@@ -351,15 +350,17 @@ main {
   color: var(--Secondary-Text-Color);
 }
 
+.subscribers-container {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
 .social-media-subcribers {
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
-}
-
-.social-media-subcribers::before {
-  content: url(../images/icon-up.svg);
-  margin-right: 10px;
+  position: relative;
 }
 
 /* ************************* */
@@ -441,9 +442,9 @@ main {
   header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
 
-    padding: 11px 0 18px 0;
+    padding: 11px 0 5px 0;
   }
 
   .header-heading {
@@ -451,6 +452,16 @@ main {
     line-height: 34px;
 
     margin-bottom: 4px;
+  }
+
+  .total-followers {
+    border-bottom: none;
+  }
+
+  .theme-toggle-container {
+    /* margin-top: 13px; */
+
+    /* justify-items: flex-end; */
   }
 
   .social-media-container {
