@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="./js/index.js" defer></script>
+
+    <title>Social Media Dashboard</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1 class="header-heading">Social Media Dashboard</h1>
+        <p class="total-followers">
+          Total Followers: <span class="total followers-number">23,004</span>
+        </p>
+      </div>
+      <div class="theme-toggle-container">
+        <div class="toggle">
+          <p id="theme-selection" class="theme-toggle-label">Dark Mode</p>
+          <input type="checkbox" id="toggle" class="checkbox" />
+          <label for="toggle" class="switch"></label>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="social-media-container">
+        <div class="social-media-card social-media-facebook card-background">
+          <h2 class="visually-hidden">Facebook</h2>
+          <div class="social-media-username-container">
+            <img src="./images/icon-facebook.svg" alt="" />
+            <h3 class="social-media-username">@nathanf</h3>
+          </div>
+          <p class="card-number">1987</p>
+          <p class="card-label">Followers</p>
+          <p class="social-media-subcribers positive">12 Today</p>
+        </div>
+
+        <div class="social-media-card social-media-twitter card-background">
+          <h2 class="visually-hidden">Twitter</h2>
+          <div class="social-media-username-container">
+            <img src="./images/icon-twitter.svg" alt="" />
+            <h3 class="social-media-username">@nathanf</h3>
+          </div>
+          <p class="card-number">1044</p>
+          <p class="card-label">Followers</p>
+          <p class="social-media-subcribers positive">99 Today</p>
+        </div>
+
+        <div class="social-media-card social-media-instagram card-background">
+          <h2 class="visually-hidden">Instagram</h2>
+          <div class="social-media-username-container">
+            <img src="./images/icon-instagram.svg" alt="" />
+            <h3 class="social-media-username">@realnathanf</h3>
+          </div>
+          <p class="card-number">11k</p>
+          <p class="card-label">Followers</p>
+          <p class="social-media-subcribers positive">1099 Today</p>
+        </div>
+
+        <div class="social-media-card social-media-youtube card-background">
+          <h2 class="visually-hidden">YouTube</h2>
+          <div class="social-media-username-container">
+            <img src="./images/icon-youtube.svg" alt="" />
+            <h3 class="social-media-username">Nathan F.</h3>
+          </div>
+          <p class="card-number">8239</p>
+          <p class="card-label">Subscribers</p>
+          <p class="social-media-subcribers negative">144 Today</p>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="overview-heading">Overview - Today</h2>
+
+        <div class="overview-container">
+          <div class="overview-card overview-facebook card-background">
+            <div class="overview-card-column-one">
+              <p class="overview-card-label">Page Views</p>
+              <p class="overview-card-number">87</p>
+            </div>
+            <div class="overview-card-column-two">
+              <img src="./images/icon-facebook.svg" alt="" />
+              <p class="overview-difference positive">3%</p>
+            </div>
+          </div>
+
+          <div class="overview-card overview-facebook card-background">
+            <div class="overview-card-column-one">
+              <p class="overview-card-label">Likes</p>
+              <p class="overview-card-number">52</p>
+            </div>
+            <div class="overview-card-column-two">
+              <img src="./images/icon-facebook.svg" alt="" />
+              <p class="overview-difference negative">2%</p>
+            </div>
+          </div>
+
+          <div class="overview-card overview-instagram card-background">
+            <div class="overview-card-column-one">
+              <p class="overview-card-label">Likes</p>
+              <p class="overview-card-number">5462</p>
+            </div>
+            <div class="overview-card-column-two">
+              <img src="./images/icon-instagram.svg" alt="" />
+              <p class="overview-difference positive">2257%</p>
+            </div>
+          </div>
+
+          <div class="overview-card overview-instagram card-background">
+            <div class="overview-card-column-one">
+              <p class="overview-card-label">Profile Views</p>
+              <p class="overview-card-number">52k</p>
+            </div>
+            <div class="overview-card-column-two">
+              <img src="./images/icon-instagram.svg" alt="" />
+              <p class="overview-difference positive">1375%</p>
+            </div>
+          </div>
+
+          <div class="overview-card overview-twitter card-background">
+            <div class="overview-card-column-one">
+              <p class="overview-card-label">Retweets</p>
+              <p class="overview-card-number">117</p>
+            </div>
+            <div class="overview-card-column-two">
+              <img src="./images/icon-twitter.svg" alt="" />
+              <p class="overview-difference positive">303%</p>
+            </div>
+          </div>
+
+          <div class="overview-card overview-twitter card-background">
+            <div class="overview-card-column-one">
+              <p class="overview-card-label">Likes</p>
+              <p class="overview-card-number">507</p>
+            </div>
+            <div class="overview-card-column-two">
+              <img src="./images/icon-twitter.svg" alt="" />
+              <p class="overview-difference positive">553%</p>
+            </div>
+          </div>
+
+          <div class="overview-card overview-youtube card-background">
+            <div class="overview-card-column-one">
+              <p class="overview-card-label">Likes</p>
+              <p class="overview-card-number">107</p>
+            </div>
+            <div class="overview-card-column-two">
+              <img src="./images/icon-youtube.svg" alt="" />
+              <p class="overview-difference negative">19%</p>
+            </div>
+          </div>
+
+          <div class="overview-card overview-youtube card-background">
+            <div class="overview-card-column-one">
+              <p class="overview-card-label">Total Views</p>
+              <p class="overview-card-number">1407</p>
+            </div>
+            <div class="overview-card-column-two">
+              <img src="./images/icon-youtube.svg" alt="" />
+              <p class="overview-difference negative">12%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
